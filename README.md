@@ -35,7 +35,7 @@ The framework implements a **stereo visual–inertial odometry (VIO)** system wi
 ---
 
 ## 📁 Project Structure
-
+```text
 VisualOdometry/
 ├── calibration/ # Stereo and IMU calibration tools
 ├── datasets/ # Husky, Aerial, Underwater, ShipHullVinyl datasets
@@ -47,7 +47,7 @@ VisualOdometry/
 ├── results/ # Plots, tables, and saved trajectories
 ├── requirements.txt
 └── README.md
-
+```
 ---
 
 ## ⚙️ Requirements
