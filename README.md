@@ -37,15 +37,12 @@ The framework implements a **stereo visual–inertial odometry (VIO)** system wi
 ## 📁 Project Structure
 ```text
 VisualOdometry/
-├── calibration/ # Stereo and IMU calibration tools
-├── datasets/ # Husky, Aerial, Underwater, ShipHullVinyl datasets
+├── datasets/ # Link to Husky, Aerial, Underwater, ShipHullVinyl datasets
 ├── src/
 │ ├── stereo_vo.py # Front-end visual odometry
 │ ├── vio.py # VIO with IMU preintegration and factor-graph fusion
-│ ├── preprocessing.py # CLAHE and underwater transformations
-│ └── evaluation.py # Error metrics and visualisation
-├── results/ # Plots, tables, and saved trajectories
-├── requirements.txt
+│ ├── aerial.py # aerial transformations
+│ ├── underwater.py # underwater transformations
 └── README.md
 ```
 ---
@@ -58,26 +55,11 @@ VisualOdometry/
 - **GTSAM** (Python bindings)
 - **argparse**, **tqdm**, **glob**
 
-### Installation
-
-```bash
-pip install -r requirements.txt
-git clone https://github.com/borglab/gtsam.git
-cd gtsam && mkdir build && cd build
-cmake ..
-make -j4
-sudo make install
-``` 
 🚀 Running the Pipeline
 1. Run Stereo VIO with IMU Fusion
 ```bash
 python src/vio.py --left data/left --right data/right --output results/
 ```
-2. Evaluate Performance
-```bash
-python src/evaluation.py --est results/trajectory.csv --gt data/groundtruth.csv
-```
-Metrics and plots are saved in /results/plots/ and /results/tables/.
 
 ##🧠 Key Findings
 
