@@ -2,7 +2,7 @@
 
 This repository contains the implementation and evaluation code used in the thesis **"Investigating a Generalised Visual–Inertial Odometry Framework for Multi-Domain Robotic Localisation" (2025)** by *Ethan Faraday*.  
 The project explores how a modular stereo–IMU pipeline performs across **terrestrial, aerial, and underwater** environments, analysing the effect of texture loss, lighting degradation, and feature quality on odometric accuracy.
-
+The ORB backend feature detector was not used for analysis, but was created and is provided in this repository. The datasets are too large to be uploaded to this repository, but a link to a Google Drive containing the compressed folders is provided.
 ---
 
 ## 🧩 Overview
