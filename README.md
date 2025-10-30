@@ -40,9 +40,10 @@ VisualOdometry/
 ├── datasets/ # Link to Husky, Aerial, Underwater, ShipHullVinyl datasets
 ├── src/
 │ ├── stereo_vo.py # Front-end visual odometry
-│ ├── vio.py # VIO with IMU preintegration and factor-graph fusion
+│ ├── vio.py # VIO with SIFT, IMU preintegration and factor-graph fusion
 │ ├── aerial.py # aerial transformations
 │ ├── underwater.py # underwater transformations
+│ ├── ORB_backend_implementation.py # ORB Feature Detector Implementation
 └── README.md
 ```
 ---
